@@ -26,6 +26,9 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Jump
+keymap("n", "<Leader>l", "$", opts)
+keymap("n", "<leader>h", "^", opts)
 
 -- Resize with alt + hjkl
 keymap("n", "<M-j>", ":resize -2<CR>", opts)
@@ -36,8 +39,9 @@ keymap("n", "<M-l>", ":vertical resize +2<CR>", opts)
 -- Save file
 keymap("n", "<Leader>w", ":w<CR>", {})
 
--- Open NvimTree
--- Telescope mapping
+-- NvimTree
+keymap("n", "<Leader>n", ":NvimTreeToggle<CR>", opts)
+
 -- Hop
 
 -- Close current buffer
