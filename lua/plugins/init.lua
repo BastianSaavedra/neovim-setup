@@ -3,6 +3,7 @@ require("plugins.telescope")
 require("plugins.lualine")
 require("plugins.treesitter")
 require("plugins.autopairs")
+require("plugins.comment")
 
 
 -- LSP Folder

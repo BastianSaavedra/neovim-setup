@@ -19,6 +19,9 @@ return require('packer').startup(function(use)
   -- Packer
   use 'wbthomason/packer.nvim'
 
+  -- Commenter
+  use 'terrortylor/nvim-comment'
+
   -- Autopairs
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
