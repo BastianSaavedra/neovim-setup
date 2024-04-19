@@ -6,9 +6,9 @@ vim.api.nvim_create_user_command("Pyapi", function()
     "url = 'www.example.com'",
     "token = 'xxxxxxxxxxxxx'",
     "headers = {'Content-Type': 'application/json', 'Authorization': token}",
-    "reponse = requests.request('GET', url, headers=headers)",
-    "if reponse.status_code == 200:",
-    "  reponse.json()",
+    "response = requests.request('GET', url, headers=headers)",
+    "if response.status_code == 200:",
+    "  response.json()",
   }
 
   vim.api.nvim_buf_set_lines(buf, -1, -1, true, python_api)

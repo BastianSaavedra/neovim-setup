@@ -21,6 +21,7 @@ local options = {
 	expandtab	      = true,
 	shiftwidth	    = 2,
 	tabstop		      = 2,
+  softtabstop     = 2,
 	cursorline	    = true,
 	number		      = true,
 	relativenumber	= true,
@@ -32,7 +33,6 @@ local options = {
 	textwidth	      = 80,
 	colorcolumn	    = "81",
 }
-
 vim.cmd("filetype plugin indent on")
 vim.opt.shortmess:append "c"
 

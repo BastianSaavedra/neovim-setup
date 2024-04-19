@@ -5,6 +5,7 @@ require("settings.plugins-setup")
 require("plugins")
 
 require("commands")
+require("scripts.python_config")
 
 -- Theme
 require("themes.nightfox")
