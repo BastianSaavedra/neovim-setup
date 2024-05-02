@@ -34,6 +34,15 @@ end
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+lspconfig.astro.setup({
+  on_attach = function(client, bufnr)
+    print("Astro LSP has started good!")
+    lspconfig.util.default_config.on_attach(client, bufnr)
+    capabilities = capabilities
+  end
+
+})
+
 
 lspconfig.bashls.setup({
   on_attach = function(client, bufnr)

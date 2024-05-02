@@ -64,6 +64,7 @@ return require('packer').startup(function(use)
 
   -- Themes
   use 'EdenEast/nightfox.nvim'
+  use 'olimorris/onedarkpro.nvim'
 
   -- Lua-line theme
   use 'nvim-lualine/lualine.nvim'

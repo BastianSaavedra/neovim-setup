@@ -8,5 +8,5 @@ require("commands")
 require("scripts.python_config")
 
 -- Theme
-require("themes.nightfox")
+require("themes.onedark")
 

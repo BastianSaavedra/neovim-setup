@@ -27,7 +27,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Jump
-keymap("n", "<Leader>l", "$", opts)
+keymap("n", "<leader>l", "$", opts)
 keymap("n", "<leader>h", "^", opts)
 
 -- Resize with alt + hjkl
@@ -42,8 +42,6 @@ keymap("n", "<Leader>w", ":w<CR>", {})
 -- NvimTree
 keymap("n", "<Leader>n", ":NvimTreeToggle<CR>", opts)
 
--- Hop
-
 -- Close current buffer
 keymap("n", "<C-b>", ":bd<CR>", {})
 
@@ -51,10 +49,11 @@ keymap("n", "<C-b>", ":bd<CR>", {})
 keymap("n", "<TAB>", ":bnext<CR>", opts)
 keymap("n", "<S-TAB>", ":bprevious<CR>", opts)
 
--- Open Playground
-
 -- Restart Lua
 keymap("n", "<Leader>fl", ":luafile%<CR>", opts)
+
+-- Open Terminal
+keymap("n", "<leader>t", ":split term://fish<CR>", opts)
 
 -- INSERT --
 -- Remap escape
